@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài Tập Buổi 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container pt-5">
+      <h4>Bài 1</h4>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <!-- Bài 1 -->
+          <div class="card">
+            <div class="card-header">
+              Cho Người Dùng Nhập Vào 3 Số Nguyên. Viết Chương Trình Xuất 3 Số
+              Theo Thứ Tự Tăng Dần.
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Số Nguyên 1</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="soNguyen1"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <div class="form-group">
+                <label>Số Nguyên 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="soNguyen2"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <div class="form-group">
+                <label>Số Nguyên 3</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="soNguyen3"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <button id="sapSep" class="btn btn-info">Sắp xếp</button>
+            </div>
+            <div id="footer" class="card-footer">Kết Quả là ?</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr style="border: 2px solid black" />
+      <br />
+      <h4>Bài 2: Viết Chương Trình "Xin Chào" Các Thành Viên Trong Gia Đình</h4>
+      <div class="form-group w-25">
+        <select id="thanhVien" class="custom-select" id="inputGroupSelect02">
+          <option value="nguoiLa" selected>Chọn Thành Viên</option>
+          <option value="bo">Bố</option>
+          <option value="me">Mẹ</option>
+          <option value="anhTrai">Anh Trai</option>
+          <option value="emGai">Em Gái</option>
+        </select>
+      </div>
+      <button onclick="loiChao()" class="btn btn-success">Gửi Lời Chào</button>
+      <div class="form-group mt-3">
+        <input
+          type="text"
+          class="form-control w-25"
+          id="answer"
+          placeholder="Kết Quả"
+        />
+      </div>
+      <br />
+      <hr style="border: 2px solid black" />
+      <br />
+      <h4>
+        Bài 3: Viết Chương Trình Xuất Ra Có Bao Nhiêu Số Lẻ Và Bao Nhiêu Số Chẵn
+      </h4>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Số Nguyên 1</label>
+            <input
+              type="text"
+              class="form-control"
+              id="so1"
+              placeholder="Nhập số tại đây"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Số Nguyên 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="so2"
+              placeholder="Nhập số tại đây"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Số Nguyên 3</label>
+            <input
+              type="text"
+              class="form-control"
+              id="so3"
+              placeholder="Nhập số tại đây"
+            />
+          </div>
+        </div>
+      </div>
+      <button id="dem" class="btn btn-warning mb-2">Đếm</button>
+      <div class="form-group">
+        <label>Kết Quả</label>
+        <input type="text" class="form-control w-25" id="count" />
+      </div>
+      <br />
+      <hr style="border: 2px solid black" />
+      <br />
+      <h4>
+        Bài 4: Viết Chương Trình Cho Nhập 3 Cạnh Tam Giác.Hãy Cho Biết Đó Là Tam
+        Giác Gì?
+      </h4>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Độ Dài Cạnh 1</label>
+            <input
+              type="text"
+              class="form-control"
+              id="canh1"
+              placeholder="Nhập số tại đây"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Độ Dài Cạnh 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="canh2"
+              placeholder="Nhập số tại đây"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Độ Dài Cạnh 3</label>
+            <input
+              type="text"
+              class="form-control"
+              id="canh3"
+              placeholder="Nhập số tại đây"
+            />
+          </div>
+        </div>
+      </div>
+      <button id="xuLi" class="btn btn-dark mb-2">Xử Lí</button>
+      <div class="form-group">
+        <label>Kết Quả</label>
+        <input type="text" class="form-control w-25" id="tamGiac" />
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
