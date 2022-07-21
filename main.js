@@ -1,20 +1,10 @@
 // Bài 1
-/**Mô hình 3 khối
- * Đầu vào:
- * -
- * -
- * Xử lí:
- * -
- * -
- * -
- * -
- * -
- * -
- * Đầu ra:
- * -
- * -
- */
 
+/**Mô hình 3 khối */
+//Đầu vào:
+//-Cho người dùng nhập 3 số nguyên
+
+//Xử lí:
 document.getElementById(`sapSep`).onclick = function () {
   var tagSoNguyen1 = document.getElementById(`soNguyen1`).value * 1;
   var tagSoNguyen2 = document.getElementById(`soNguyen2`).value * 1;
@@ -39,28 +29,18 @@ document.getElementById(`sapSep`).onclick = function () {
     document.getElementById(`footer`).innerHTML =
       "Kết Quả : " + tagSoNguyen2 + " < " + tagSoNguyen3 + " < " + tagSoNguyen1;
   }
+
   document.getElementById(`footer`).classList =
     "card-footer text-center text-white bg-dark";
 };
+//Đầu ra:
+//- Xuất 3 số nguyên theo thứ tự tăng dần ra output
 
 // Bài 2
-/**Mô hình 3 khối :
- * Đầu vào:
- * -
- * -
- * Xử lý:
- * -
- * -
- * -
- * -
- * -
- * -
- * -
- * -
- * Đầu ra:
- * -
- * -
- */
+// Mô hình 3 khối
+// Đầu vào:
+//- Cho người dùng chọn các thành viên trong gia đình
+//Xử lí:
 function loiChao() {
   var tagThanhVien = document.getElementById(`thanhVien`).value;
   var tagLoiChao = "Xin Chào";
@@ -76,27 +56,14 @@ function loiChao() {
     document.getElementById(`answer`).value = tagLoiChao + " Người Lạ !";
   }
 }
+//Đầu ra:
+//-Xuất câu "Chào hỏi" ra  output
 
 //Bài 3
-/** Mô Hình 3 Khối
- * Đầu vào:
- * -
- * -
- * Xử lí :
- * -
- * -
- * -
- * -
- * -
- * -
- * -
- * -
- * -
- * Đầu ra:
- * -
- * -
- *
- */
+//Mô hình 3 khối
+//Đầu vào:
+//-Nhập 3 số nguyên
+//Xử lí:
 document.getElementById(`dem`).onclick = function () {
   var tagSo1 = Number(document.getElementById(`so1`).value);
   var tagSo2 = Number(document.getElementById(`so2`).value);
@@ -117,27 +84,14 @@ document.getElementById(`dem`).onclick = function () {
   document.getElementById(`count`).value =
     "Có " + soChan + " số chẵn, " + soLe + " số lẻ.";
 };
+//Đầu ra:
+//-Xuất ra output có bao nhiêu số chẵn, bao nhiêu số lẻ từ 3 số đã nhập
 
 // Bài 4
-/** Mô Hình 3 Khối
- * Đầu vào:
- * -
- * -
- * Xử lí :
- * -
- * -
- * -
- * -
- * -
- * -
- * -
- * -
- * -
- * Đầu ra:
- * -
- * -
- *
- */
+//Mô hình 3 khối
+//Đầu vào:
+//-Cho người dùng nhập 3 cạnh của tam giác
+//Xử lí:
 document.getElementById(`xuLi`).onclick = function () {
   var tagCanh1 = document.getElementById(`canh1`).value * 1;
   var tagCanh2 = document.getElementById(`canh2`).value * 1;
@@ -160,3 +114,5 @@ document.getElementById(`xuLi`).onclick = function () {
     document.getElementById(`tamGiac`).value = " Đây là tam giác khác!";
   }
 };
+//Đầu ra:
+//-Xuất ra output loại tam giác
